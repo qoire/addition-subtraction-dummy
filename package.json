@@ -1,0 +1,19 @@
+{
+  "name": "@qoire/addition-subtraction-dummy",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:qoire/addition-subtraction-dummy.git",
+  "author": "qoire <mr.sun.yao@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p .",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}
